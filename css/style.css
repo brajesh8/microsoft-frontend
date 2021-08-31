@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap');
+*, *::after , *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /* font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-size : 1rem;
+}
+
+ul li{
+    list-style: none;
+}
+
+/* ########## Utility classes ############# */
+
+
+.container {
+    max-width: 1351px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: .5em 1.5em;
+    /* border-radius: 50px; */
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+}
+.btn-primary{
+    background:#000;
+    color: #fff;
+    font-size: 1.5rem;
+    /* padding: 8px 20px 8px 20px; */
+
+}
+
+.btn-secondary{
+    display: block;
+    font-size: 1.4rem;
+    padding: 0;
+    margin-top: 1em;
+    cursor: pointer;
+    word-spacing: 2px;
+}
+
+.btn-secondary::after{
+    content: '>';
+    margin-left: .5em;
+    font-size: 1.5rem;    
+}
+
+
+/* ########## Navbar styling ############# */
+
+.navbar-container {
+    display: flex; 
+    align-items: flex-start;
+    font-weight: 300;  
+}
+
+.navbar-container .nav-left{
+    display: flex;   
+    align-items: center;
+    width: 70%;
+    /* border : 1px solid red;     */
+}
+
+.navbar-container .nav-left .logo{
+    text-align: center;
+}
+
+.navbar-container .nav-left .logo img{  
+    display: block;
+    /* height: 400px; */
+    /* max-width: 100%;     */
+    width: 108px;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+}
+
+.navbar-container .nav-left .menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    font-size: 1.5rem;    
+}
+
+.navbar-container .nav-left .menu-items .menu-item{    
+    margin: 1rem;    
+}
+
+.navbar-container .nav-right{ 
+    width: 30%;  
+}
+
+.navbar-container .nav-right .menu-items{
+    display: flex;     
+    justify-content: flex-end;
+    align-items: center;  
+    font-size: 1.5rem;
+}
+
+.navbar-container .nav-right .menu-items .menu-item{
+    margin: .3rem;
+    padding: 1rem;   
+}
+
+/* ######### Home page banner styling ############## */
+.banner-container{
+    position: relative;
+}
+.banner-container-info {
+    position: absolute;
+    top :50%;
+    left : 5%;
+}
+
+.banner-container-info .banner-heading {    
+    font-size: 2.5rem;
+}
+
+.banner-container-info .banner-text {
+    /* padding : 1.5rem; */
+    font-size: 1.5rem;
+}
+
+/* .banner-container-info .btn-primary span{
+    font-size: 2rem;
+} */
+
+.banner-container-info .btn-primary::after{
+    content: '>';
+    font-size: 1.5rem;
+    margin-top: .1rem;
+    margin-left: .5rem;
+    display: inline-block;
+    position: relative;
+    right: 0;
+    /* content: ""; */
+    vertical-align: top;;
+}
+
+/* ########### Category section styling ################## */
+.category-container{
+    display: flex;
+    margin: 5% auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-container .category{   
+    text-align: center;
+    margin: 0 3.5rem;
+}
+
+.category-container .category img{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 8px;
+}
+
+.category-container .category h2{  
+    width: 135px;  
+}  
+
+/* ########### Product Styling ################### */
+.product-container{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+.product-lists {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.product-lists .product-list{
+    /* display: inline-block; */
+    width: 23%;
+    /* margin: 0 1.5rem; */
+    
+}
+
+.product-lists .product-list img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-lists .product-list .product-heading{
+    margin: 1.5em 0 0 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.product-lists .product-list .product-info{    
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/* .product-lists .product-list a.btn {
+    display: block;
+    font-size: 1.4rem;
+    padding : 0;   
+    margin-top: 1em;
+    cursor: pointer;
+    word-spacing: 2px;
+} */
+
+/* .product-lists .product-list a.btn::after{
+    content: '>';
+    margin-left: .5em;
+    font-size: 1.5rem;    
+} */
+
+/* ##########one drive styling ################ */
+.one-drive-container{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.one-drive-container .one-drive-info{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    
+}
+
+.one-drive-container .one-drive-info h2{
+    font-size: 2.5rem;
+}
+
+.one-drive-container .one-drive-info p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 80%;
+}
+
+.one-drive-container .one-drive-img img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+    /* transform: scale(1.0125) */
+}
+
+
+/* ##############business styling ################## */
+.business-container{
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+}
+.business-heading{
+    font-size: 2.2rem;
+    margin: 1.5rem 0;
+    font-weight: 700;
+}
+.business-lists{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.business-lists .business-list{
+    width: 23%;
+}
+
+.business-lists .business-list img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.business-lists .business-list h2{
+    margin-top: 3.5rem;
+    font-size: 1.8rem;
+    word-spacing: 2px;
+}
+
+.business-lists .business-list p{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/* ##############covid container styling #################### */
+.covid-container{
+   
+    text-align: center;
+    background: #E6E6E6;
+    padding: 3.5rem;      
+    margin-bottom: 4rem;
+}
+
+.covid-container  h2{
+    font-size: 3.5rem;
+}
+
+.covid-container p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.covid-container a.btn{
+    color:#000;
+}
+
+/* ########## Follow container styling ############## */
+.follow-container .follow-lists {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    margin-bottom: 4rem;
+}
+
+.follow-container .follow-lists:first-child{
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(0,0,0,.6);
+    padding-right: 12px;
+    /* margin-bottom: 4px; */
+}
+
+
+.follow-container .follow-lists .follow-list img{
+    display: block;
+    width: 35px;
+    margin: 1rem;
+}
+
+/* ############ Footer styling ############## */
+.footer{
+    background: #E6E6E6;
+    color: #616161;
+    word-break: break-word;
+}
+.footer-container .footer-container-upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem;
+}
+
+.footer-container .footer-container-upper .item-menus .item-menu{
+    padding: .5rem;
+}
+.footer-container .footer-container-upper .item-menus :first-child{
+    color: #776161;
+    word-break: break-word;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+
+.footer-container-bottom {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.footer-bottom-left{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+}
+.footer-bottom-left i{
+    margin-right: 1rem;
+}
+.footer-bottom-right{  
+    flex-grow: 2;
+}
+.footer-bottom-lists{
+    display: flex;
+    justify-content: flex-end;    
+}
+
+.footer-bottom-lists .footer-bottom-list{
+    padding: 1rem;
+}
