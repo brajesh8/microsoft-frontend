@@ -1,0 +1,22 @@
+
+
+/* ############# Payment Infra Styling ############# */
+body{
+    margin: 0;
+    padding: 0;
+}
+body > #bg{
+
+    width: 100%;
+    height: 95vh;
+    background: url('../img/payment-infra.png');
+    background-color: rgb(2,211,248);
+    /* clip-path: polygon(100% 1%, 100% 49%, 49% 99%, 0 99%, 0 0); */
+
+    /* clip-path: polygon(0 0, 100% 0, 100% 31%, 1% 100%, 0 100%, 0 50%); */
+    clip-path: polygon(0 0, 100% 0, 100% 31%, 0 100%, 0 50%);
+    
+}
+
+
+
